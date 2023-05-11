@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* - The header text color is white and is 50px
+- The header is centered on the page
+- The input label text color is white and is 35px
+- The input label is centered on the page
+- The input field text is 18px
+- The input field should take up 50% of the width of the page
+- The input field is centered on the page
+- There is 12px of padding on the left and the right of the input field
+- There is 6px of padding on the top and the bottom of the input field
+- The background is this [image](./preparedness-frontend/src/assets/background-image.jpeg)
+- The buttons are centered under the input field
+- The background color of the buttons are `#0dcaf0`
+- The color of the text on the buttons is white
+- The is 10 px of padding on all sides of the button
+- There is 20px between the two buttons
+- There is 20px between the bottom of the input and the top of the buttons */
+
+
+.heading {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.label {
+  color: white;
+  display: flex;
+  justify-content: center;
 }
+
+.input {
+  font-size: 18px;
+  padding: 6px 12px;
+  width: 50%;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 25px;
+}
+
+.buttons button {
+  margin-right: 20px;
+}
+
+body {
+  background-image: url("../src/assets/background-image.jpeg");
+  background-position: cover;
+}
+
